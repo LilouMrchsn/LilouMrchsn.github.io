@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+    <foaf:Person>
+        <foaf:name>Lilou Marchesin</foaf:name>
+        <foaf:givenName>Lilou</foaf:givenName>
+        <foaf:familyName>Marchesin</foaf:familyName>
+        <foaf:birthday>2002-07-26</foaf:birthday>
+        <foaf:mbox rdf:resource="mailto:lilou.marchesin@etudiant.univ-lr.com" />
+        <foaf:organization>
+            <foaf:Organization>
+                <foaf:name>Amiltone</foaf:name>
+            </foaf:Organization>
+        </foaf:organization>
+        <foaf:homepage rdf:resource="http://www.votresite.com" />
+    </foaf:Person>
+
+</rdf:RDF>
+
+  
