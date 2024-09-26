@@ -21,6 +21,18 @@
                 <p><strong>First Name:</strong> <xsl:value-of select="//foaf:Person/foaf:givenName"/></p>
                 <p><strong>Date of Birth:</strong> <xsl:value-of select="//foaf:Person/foaf:birthday"/></p>
 
+                <!-- Email retrieved from rdf:resource attribute -->
+                <p><strong>Email:</strong> 
+                    <a href="{//foaf:Person/foaf:mbox/@rdf:resource}">
+                        <xsl:value-of select="//foaf:Person/foaf:mbox/@rdf:resource"/>
+                    </a>
+                </p>
+
+                <!-- Organization name extracted from nested foaf:Organization -->
+                <p><strong>Organization:</strong> 
+                    <xsl:value-of select="//foaf:Person/foaf:organization/foaf:Organization/foaf:name"/>
+                </p>
+
                 <!-- Displaying known persons (connections) -->
                 <h2>Known People</h2>
                 <ul>
